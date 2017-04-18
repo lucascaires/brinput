@@ -4,8 +4,11 @@ Menos de 1KB de javascript
 
 
 # Como utilizar
-1. Inclua o arquivo brinput.js na página desejada
-2. Adicione o atributo "br-input" em seus campos de formulários com os termos desejados (telefone, cpf, cpnj ou cep)
+1. Faça o download da arquivo:
+1.1 [Desenvolvimento]
+1.2 [Produçao / Minificada] (Recomendada)
+2. Inclua o arquivo baixado na página desejada
+3. Adicione o atributo "br-input" em seus campos de formulários com os termos desejados (telefone, cpf, cpnj ou cep)
 
 # Exemplo
 
@@ -21,3 +24,8 @@ Menos de 1KB de javascript
 **CNPJ**
 
     <input type="text" placeholder="00.000.000/0000-00" br-input="cnpj">`
+
+
+
+[Desenvolvimento]: <https://raw.githubusercontent.com/lucascaires/brinput/master/src/brinput.js>
+[Produçao / Minificada]: <https://raw.githubusercontent.com/lucascaires/brinput/master/dist/brinput.min.js>

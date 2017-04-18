@@ -5,8 +5,10 @@ Menos de 1KB de javascript
 
 # Como utilizar
 1. Faça o download da arquivo:
+
     1.1 [Desenvolvimento]
     1.2 [Produçao / Minificada] (Recomendada)
+
 2. Inclua o arquivo baixado na página desejada
 3. Adicione o atributo "br-input" em seus campos de formulários com os termos desejados (telefone, cpf, cpnj ou cep)
 

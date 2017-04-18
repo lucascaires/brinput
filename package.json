@@ -1,0 +1,32 @@
+{
+  "name": "brinput",
+  "version": "1.0.0",
+  "description": "Plugin made with vanilla js for some of brazilian input information type, such: CPF, CNPJ, CEP and Phone Number",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascaires/brinput.git"
+  },
+  "keywords": [
+    "mascara",
+    "cep",
+    "cpf",
+    "cnpj",
+    "telefone"
+  ],
+  "author": "Lucas Caires",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucascaires/brinput/issues"
+  },
+  "homepage": "https://github.com/lucascaires/brinput#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2",
+    "pump": "^1.0.2"
+  }
+}

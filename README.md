@@ -7,6 +7,7 @@ Menos de 1KB de javascript
 1. Faça o download da arquivo:
 
     1.1 [Desenvolvimento]
+
     1.2 [Produçao / Minificada] (Recomendada)
 
 2. Inclua o arquivo baixado na página desejada

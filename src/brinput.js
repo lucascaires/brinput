@@ -6,7 +6,8 @@
  * Plugin utilizado em projetos pessoais para adicionar máscaras em campos de formulário
  */
 
-var _br,
+
+	var _br,
     brInput = {
 
 	//Seletor	
@@ -85,4 +86,4 @@ var _br,
 		k.value = a;
 	}
 };
-brInput.init();
+brInput.init()

@@ -1,6 +1,6 @@
 {
   "name": "brinput",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin made with vanilla js for some of brazilian input information type, such: CPF, CNPJ, CEP and Phone Number",
   "main": "index.js",
   "scripts": {

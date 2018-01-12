@@ -9,10 +9,10 @@
 class brInput {
 
   //Constructor
-  constructor(config) {
+  constructor(args) {
     this.config = {}
-    this.config.sel = config && config.sel || "[br-input]"
-    this.config.attr = config && config.attr || "br-input"
+    this.config.sel = args && args.sel || "[br-input]"
+    this.config.attr = args && args.attr || "br-input"
     this.init()
   }
 

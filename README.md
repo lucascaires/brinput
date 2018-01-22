@@ -1,21 +1,28 @@
 # BR Input
 Plugin em javascript puro (vanilla) com as principais máscaras para formulários de campos utilizados no Brasil (CPF, CNPJ, CEP, Telefone)
-Menos de 1KB de javascript
-
 
 # Como utilizar
-1. **Faça o download da arquivo:**
+**Instale via NPM**
 
-    - [Desenvolvimento]
-    - [Produçao / Minificada] (Recomendada)
+        npm install brinput
 
-2. Inclua o arquivo baixado na página desejada
+**Inclue com require (CommonJS) **
 
-        <script type="text/javascript" src="/path/to/brinput.min.js"></script>
+        const brinput = require('brinput')
 
-3. Adicione o atributo "br-input" em seus campos de formulários com os termos desejados (telefone, cpf, cpnj ou cep)
+**Inclua com o import (ES6)**
 
-# Exemplo de Utilização
+        import brInput from 'brinput'
+
+# Utilização via CDN
+
+Você também pode optar por usá-lo via CDN. Apenas inclua o seguinte código em sua página.
+
+# Instancie a classe
+
+        new brInput()
+
+# Exemplo de Utilização via atributo
 
 **Telefone**
 
@@ -32,5 +39,4 @@ Menos de 1KB de javascript
 
 
 
-[Desenvolvimento]: <https://raw.githubusercontent.com/lucascaires/brinput/master/src/brinput.js>
-[Produçao / Minificada]: <https://raw.githubusercontent.com/lucascaires/brinput/master/dist/brinput.min.js>
+

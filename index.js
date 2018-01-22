@@ -1,6 +1,6 @@
 /**
  * brinput.js
- * @version: v1.0.1
+ * @version: v1.0.2
  * @author: Lucas Caires
  *
  * Plugin utilizado em projetos pessoais para adicionar máscaras em campos de formulário
@@ -23,7 +23,7 @@ class brInput {
     }
   }
 
-  //Get all nodes
+  //Get Nodes
   getElements() {
     return this.config.sel && document.querySelectorAll(this.config.sel)
   }
@@ -39,12 +39,12 @@ class brInput {
     })
   }
   
-  //Adiciona o atributo max-length
+  //Set the max length of the input
   setMaxlen(el, size) {
     el.setAttribute('maxlength', size)
   }
 
-  //Mascara para Telefone (00) 0000-0000
+  //Set mask for brazilian phone: (00) 0000-0000
   telefoneMask(k) {
     this.setMaxlen(k, 15)
     let a = k.value
@@ -54,7 +54,7 @@ class brInput {
     k.value = a
   }
 
-  //Mascara para CEP 000000-000
+  //Mask for brazilian zip-code (CEP): 000000-000
   cepMask(k) {
     this.setMaxlen(k, 9)
     let a = k.value
@@ -63,7 +63,7 @@ class brInput {
     k.value = a
   }
 
-  //Mascara para CPF 000.000.000-00
+  //Mask for brazilian social security number: 000.000.000-00
   cpfMask(k) {
     this.setMaxlen(k, 14)
     let a = k.value
@@ -74,7 +74,7 @@ class brInput {
     k.value = a
   }
 
-  //Mascara para CNPJ 00.000.000/0000-00
+  //Mask for brazilian national registry of companies: 00.000.000/0000-00
   cnpjMask(k) {
     this.setMaxlen(k, 18)
     let a = k.value
@@ -86,5 +86,3 @@ class brInput {
     k.value = a
   }
 }
-
-new brInput()

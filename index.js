@@ -86,3 +86,5 @@ class brInput {
     k.value = a
   }
 }
+
+export default brInput

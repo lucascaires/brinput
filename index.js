@@ -1,6 +1,6 @@
 /**
  * brinput.js
- * @version: v1.0.2
+ * @version: v1.0.3
  * @author: Lucas Caires
  *
  * Plugin utilizado em projetos pessoais para adicionar máscaras em campos de formulário

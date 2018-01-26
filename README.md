@@ -11,7 +11,7 @@ Plugin extremamente leve (pouco mais de 1KB) com as principais máscaras para fo
 
 **Inclue com require (CommonJS)**
 
-    const brinput = require('brinput')
+    const brInput = require('brinput').default
 
 **Inclua com o import (ES6)**
 

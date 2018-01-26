@@ -4,9 +4,7 @@
   "description": "A tiny plugin made with vanilla js for some of brazilian input information type, such: CPF, CNPJ, CEP and Phone Number",
   "main": "index.js",
   "scripts": {
-    "build": "npm run assets && npm run minify",
-    "minify": "node ./node_modules/babel-minify/bin/minify.js ./index.js -o ./dist/brinput.min.js",
-    "assets": "node ./node_modules/mkdirp/bin/cmd.js ./dist"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -26,7 +24,9 @@
   },
   "homepage": "https://github.com/lucascaires/brinput#readme",
   "devDependencies": {
-    "babel-minify": "^0.2.0",
-    "mkdirp": "^0.5.1"
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.38",
+    "babel-loader": "^8.0.0-beta.0",
+    "webpack": "^3.10.0"
   }
 }

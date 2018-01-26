@@ -9,13 +9,15 @@ Plugin extremamente leve (pouco mais de 1KB) com as principais máscaras para fo
 
     npm install brinput
 
-**Inclue com require (CommonJS)**
+**Importe**
+
+    import brInput from 'brinput'
+
+**Se preferir, use require**
 
     const brInput = require('brinput').default
 
-**Inclua com o import (ES6)**
 
-    import brInput from 'brinput'
 
 ## Via CDN
 
@@ -28,24 +30,23 @@ Você também pode optar por usá-lo via CDN. Apenas inclua o seguinte código e
 
 Instancie um objeto brInput
 
-        <script>
-            new brInput()
-        </script>
+    <script>
+        new brInput()
+    </script>
 
 ## Exemplo de Utilização via atributo
 
 **Telefone**
-
     <input type="text" placeholder="(00) 00000-0000" br-input="telefone">
+
 **CEP**
-
     <input type="text" placeholder="00000-000" br-input="cep">
+
 **CPF**
-
     <input type="text" placeholder="000.000.000-00" br-input="cpf">
-**CNPJ**
 
-    <input type="text" placeholder="00.000.000/0000-00" br-input="cnpj">`
+**CNPJ**
+    <input type="text" placeholder="00.000.000/0000-00" br-input="cnpj">
 
 
 ## Ou sete seus campos no construtor do objeto, por exemplo:

@@ -6,37 +6,48 @@
  * Plugin utilizado em projetos pessoais para adicionar máscaras em campos de formulário
  */
 
-class brInput {
+export class brInput {
 
   //Constructor
   constructor(args) {
-    this.config = {}
-    this.config.sel = args && args.sel || "[br-input]"
-    this.config.attr = args && args.attr || "br-input"
+
+    this.default = {
+      telefone: '[br-input=telefone]',
+      cpf: '[br-input=cpf]',
+      cnpj: '[br-input=cnpj]',
+      cep: '[br-input=cep]'
+    }
+    this.config = args || {}
+    this.config.inputs = args && args.inputs || this.default
     this.init()
   }
 
   //Init
   init() {
-    if("object" === typeof this.getElements()) {
-      this.getElements().forEach(each => this.setListener(each))
-    }
+    let inputs = this.config.inputs
+    Object.keys(inputs).forEach(key => {
+      let nodes = document.querySelectorAll(inputs[key])
+      if(nodes.length > 1) {
+        nodes.forEach(node => this.listen(key, node))
+      } else {
+        this.listen(key, nodes[0])
+      }
+    }) 
   }
 
-  //Get Nodes
-  getElements() {
-    return this.config.sel && document.querySelectorAll(this.config.sel)
-  }
-
-  //Listen to the keyboard and fire the relative method
-  setListener(each) {
-    const input = each.getAttribute(this.config.attr)
-    each.addEventListener('keyup', key => {
-      if ("telefone" === input) this.telefoneMask(each)
-      if ("cep" === input) this.cepMask(each)
-      if ("cpf" === input) this.cpfMask(each)
-      if ("cnpj" === input) this.cnpjMask(each)
+  //Listen keyup
+  listen(key, node) {
+    node.addEventListener('keyup', () => {
+      this.mask(key, node)
     })
+  }
+
+  //Set mask
+  mask(key, node) {
+    if ("telefone" === key) this.telefoneMask(node)
+      if ("cep" === key) this.cepMask(node)
+      if ("cpf" === key) this.cpfMask(node)
+      if ("cnpj" === key) this.cnpjMask(node)
   }
   
   //Set the max length of the input
@@ -86,5 +97,3 @@ class brInput {
     k.value = a
   }
 }
-
-export default brInput

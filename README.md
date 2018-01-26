@@ -21,7 +21,7 @@ Plugin extremamente leve (pouco mais de 1KB) com as principais máscaras para fo
 
 Você também pode optar por usá-lo via CDN. Apenas inclua o seguinte código em sua página.
 
-    https://cdn.jsdelivr.net/npm/brinput/dist/brinput.min.js
+    <script src="https://cdn.jsdelivr.net/npm/brinput/dist/brinput.min.js"></script>
 
 
 # Como utilizar
@@ -29,7 +29,7 @@ Você também pode optar por usá-lo via CDN. Apenas inclua o seguinte código e
 Instancie um objeto brInput
 
         <script>
-        new brInput()
+            new brInput()
         </script>
 
 ## Exemplo de Utilização via atributo
@@ -50,10 +50,12 @@ Instancie um objeto brInput
 
 ## Ou sete seus campos no construtor do objeto, por exemplo:
 
-    new brInput({
-        telefone: '#telefone',
-        cep: '#cep',
-        cnpj: '#cnpj',
-        cpf: '#cpf'
-    })
+    <script>
+        new brInput({
+            telefone: '#telefone',
+            cep: '#cep',
+            cnpj: '#cnpj',
+            cpf: '#cpf'
+        })
+    </script>
 

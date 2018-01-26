@@ -42,27 +42,37 @@
 				
 		<div class="input-group">
 			<label for="telefone">Telefone</label>
-			<input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" br-input="telefone">
+			<input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000">
 		</div>
 
 		<div class="input-group">
 			<label for="cep">CEP</label>
-			<input type="text" name="cep" id="cep" placeholder="00000-000" br-input="cep">
+			<input type="text" name="cep" id="cep" placeholder="00000-000">
 		</div>
 
 		<div class="input-group">
 			<label for="cpf">CPF</label>
-			<input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" br-input="cpf">
+			<input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
 		</div>
 
 		<div class="input-group">
 			<label for="cnpj">CNPJ</label>
-			<input type="text" name="cnpj" id="cnpj" placeholder="00.000.000/0000-00" br-input="cnpj">
+			<input type="text" name="cnpj" id="cnpj" placeholder="00.000.000/0000-00">
 		</div>
+	
 
 	</div>
 
 	<script src="../dist/brinput.min.js"></script>
-
+	<script>
+		new brInput({
+			inputs: {
+				telefone: '#telefone',
+				cep: '#cep',
+				cpf: '#cpf',
+				cnpj: '#cnpj'
+			}
+		})
+	</script>
 </body>
 </html>

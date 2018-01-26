@@ -6,7 +6,7 @@
  * Plugin utilizado em projetos pessoais para adicionar máscaras em campos de formulário
  */
 
-export class brInput {
+export default class brInput {
 
   //Constructor
   constructor(args) {

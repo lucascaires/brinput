@@ -83,7 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.brInput = void 0;
+exports.default = void 0;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -211,7 +211,7 @@ function () {
   return brInput;
 }();
 
-exports.brInput = brInput;
+exports.default = brInput;
 
 /***/ })
 /******/ ]);
